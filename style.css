@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+.title-text{
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    font-size: 18px;
+}
+.title{
+    font-weight: 200;
+}
+.title-bold{
+    font-weight: 600;
+}
+.desc{
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+}
+.card-wrapper{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 33.34%);
+    grid-template-rows: repeat(4, 25%);
+}
+.supervisor{
+    grid-area: 2/1/4/2;
+    border-top: 3px solid hsl(180, 62%, 55%);
+
+}
+.team{
+    grid-area: 1/2/3/3;
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+.karma{
+    grid-area: 3/2/5/3;
+    border-top: 3px solid hsl(34, 97%, 64%);
+
+}
+.calculator{
+    grid-area: 2/3/4/4;
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+.card{
+    width: 80%;
+    margin: 10px auto;
+    padding: 25px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+}
+.card-title{
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 8px;
+}
+.jobdesk{
+    color:hsl(229, 6%, 66%);
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+.card img{
+    float: right;
+}
+
+@media (max-width:450px) {
+    .container{
+        width: 85%;
+    }
+    .title-text{
+        font-size: 15px;
+    }
+    .desc{
+        font-size: 15px;
+        width: fit-content;
+    }
+    .card-wrapper{
+        display: block;
+    }
+    .card-title{
+        font-size: 15px;
+    }
+    .jobdesk{
+        font-size: 12px;
+    }
+    .card img{
+        width: 25%;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}
